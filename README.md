@@ -27,6 +27,7 @@
 ## 🇮🇩 Bahasa Indonesia
 
 ### 🚧 Status Proyek
+**Current Version:** v0.1.0 (Pre-release)
 **LeuitLog masih dalam tahap pengembangan aktif.**
 
 - ❌ Belum siap untuk production
