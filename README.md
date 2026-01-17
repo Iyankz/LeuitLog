@@ -27,7 +27,7 @@
 ## 🇮🇩 Bahasa Indonesia
 
 ### 🚧 Status Proyek
-**Current Version:** v0.1.0 (Pre-release)
+**Current Version:** v.0.2.2 (Pre-release)
 **LeuitLog masih dalam tahap pengembangan aktif.**
 
 - ❌ Belum siap untuk production
@@ -131,7 +131,7 @@ This repository is **not recommended for production use** at this stage.
 ---
 ## 🔧 v0.2.1 Update (Preserved Evolution)
 
-This version **extends v0.1.0 without removing any content**.
+This version **extends v.0.2.2 without removing any content**.
 
 New in v0.2.1:
 - Working syslog receiver (UDP 514)
