@@ -1,99 +1,62 @@
-# LeuitLog 🌾
-**Lightweight SIEM & Syslog Recorder**
+<p align="center">
+  <img src="./docs/Leuitloglogonobg.png" alt="LeuitLog Logo" width="180"/>
+</p>
+
+<h1 align="center">LeuitLog 🌾</h1>
+
+<p align="center">
+  <b>Lightweight SIEM & Syslog Recorder</b><br/>
+  <i>Menyimpan Marwah • Menjaga Kedaulatan • Menjamin Ketahanan</i><br/>
+  <i>Store with dignity • Guard with sovereignty • Build resilience</i>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/status-under%20development-orange"/>
+  <img src="https://img.shields.io/badge/category-SIEM-blue"/>
+  <img src="https://img.shields.io/badge/syslog-UDP%20514-green"/>
+  <img src="https://img.shields.io/badge/platform-Linux-lightgrey"/>
+  <img src="https://img.shields.io/badge/license-TBD-red"/>
+</p>
+
+---
 
 ![LeuitLog Architecture](./docs/WorkFlow%20LeuitLog.png)
 
-LeuitLog adalah solusi **Lightweight SIEM** yang dirancang untuk **ISP, Data Center, dan infrastruktur Linux**.  
-Mengadopsi filosofi *Leuit* (lumbung padi), LeuitLog berfungsi sebagai **lumbung digital** untuk menyimpan, menjaga, dan menganalisis log jaringan secara **mandiri & berdaulat**.
-
 ---
 
-## 🚧 Status Proyek
+## 🇮🇩 Bahasa Indonesia
 
-> **Under Development (Active Development)**
+### 🚧 Status Proyek
+**LeuitLog masih dalam tahap pengembangan aktif.**
 
 - ❌ Belum siap untuk production
-- 🔄 Arsitektur & fitur masih dapat berubah
-- 🧪 Digunakan untuk eksplorasi desain & pengembangan internal
+- 🔄 Arsitektur dan fitur masih dapat berubah
+- 🧪 Digunakan untuk eksplorasi desain dan pengembangan internal
 
 ---
 
-## 🧭 Gambaran Sistem (High-Level)
+### 🌾 Apa itu LeuitLog?
+LeuitLog adalah **Lightweight SIEM & Syslog Recorder** yang dirancang untuk **ISP, Data Center, dan infrastruktur Linux**.
 
-LeuitLog mengumpulkan **syslog dari berbagai sumber** melalui **UDP 514**, lalu memprosesnya menggunakan **Sentinel Engine** untuk membedakan:
-
-- Aktivitas normal
-- Serangan brute force (multi sumber)
-- Perubahan konfigurasi sah oleh NOC (audit)
-
----
-
-## 🧱 Arsitektur & Alur Kerja (Berdasarkan Diagram)
-
-### 👤 Source / Actor Layer
-- 🟢 **Normal User** — login sukses
-- 🔴 **Attacker #1** — `192.168.111.111` (SSH gagal x7)
-- 🟠 **Attacker #2** — `192.168.222.222` (MikroTik gagal x12)
-- 🔵 **NOC Engineer** — perubahan konfigurasi (authorized)
-
-> Semua aktivitas menghasilkan **Syslog UDP 514**
+Terinspirasi dari konsep *Leuit* (lumbung padi), LeuitLog berfungsi sebagai **lumbung digital**:
+- Log diperlakukan sebagai aset berharga
+- Serangan dipantau secara aktif
+- Kedaulatan data dijaga sepenuhnya (on-premise, tanpa vendor lock-in)
 
 ---
 
-### 🌐 Device & Service Layer
-- **Linux Server**
-  - SSH Service
-- **MikroTik Router**
-  - Winbox / API / CLI
+### 🧭 Gambaran Sistem
+LeuitLog mengumpulkan **syslog melalui UDP port 514** dan memprosesnya menggunakan **Sentinel Engine** untuk membedakan:
+
+- Aktivitas normal  
+- Serangan brute force  
+- Perubahan konfigurasi sah oleh NOC  
 
 ---
 
-### 🛡️ LeuitLog — Sentinel Engine
-
-**1) Async Syslog Receiver**
-- UDP 514
-- Non-blocking, real-time
-
-**2) Log Parser**
-- Vendor detection: Linux / MikroTik
-- Kategori:
-  - `auth`
-  - `system`
-  - `config`
-
-**3) Security Analyzer**
-- Counter brute force **per IP**
-- Threshold **hanya berlaku untuk auth failure**
-- Config change **tidak memicu alert**
-
----
-
-### 🗄️ Penyimpanan Log
-- `logs`
-  - auth / system / config
-- `security_incidents`
-  - IP attacker
-  - Jumlah attempt
-  - Target device
-
----
-
-### 📊 Dashboard Web
-Berbasis **Nginx + FastAPI**, menyediakan:
-- Log viewer & audit trail
-- Alert brute force
-- Ringkasan attacker
-
-Contoh:
-- `192.168.222.222` (MikroTik) → **12 attempts**
-- `192.168.111.111` (Linux) → **7 attempts**
-
----
-
-## 🔔 Perilaku Sistem (Ringkas)
-
-| Aktivitas | Respon LeuitLog |
-|---|---|
+### 🔔 Perilaku Sistem
+| Aktivitas | Respon |
+|----------|--------|
 | Login sukses | Disimpan sebagai log |
 | Gagal login < threshold | Disimpan sebagai log |
 | Gagal login > threshold | Incident + Alert |
@@ -101,20 +64,63 @@ Contoh:
 
 ---
 
-## 🛡️ Filosofi
+## 🇬🇧 English Version
 
-> **Setiap log adalah padi.**  
-> **Setiap serangan adalah hama.**  
-> **Setiap data adalah marwah.**
+### 🚧 Project Status
+**LeuitLog is under active development.**
 
-LeuitLog tidak hanya menyimpan log, tetapi **menjaga kedaulatan dan ketahanan data jaringan**.
-
----
-
-## 📌 Catatan Penting
-Repository ini **belum direkomendasikan untuk production**.  
-Dokumentasi teknis & panduan instalasi akan menyusul pada rilis stabil.
+- ❌ Not production-ready
+- 🔄 Architecture and features may change
+- 🧪 Intended for design exploration and internal development
 
 ---
 
-🌾 Terima kasih telah tertarik dengan **LeuitLog**
+### 🌾 What is LeuitLog?
+LeuitLog is a **Lightweight SIEM & Syslog Recorder** designed for **ISP, Data Centers, and Linux infrastructures**.
+
+Inspired by the traditional *Leuit* (granary), LeuitLog acts as a **digital granary**:
+- Logs are treated as valuable assets
+- Security threats are actively monitored
+- Full data sovereignty is maintained (on-premise, no vendor lock-in)
+
+---
+
+### 🧭 System Overview
+LeuitLog collects **syslog via UDP port 514** and processes it using a **Sentinel Engine** to distinguish between:
+
+- Normal activity  
+- Brute force attacks  
+- Authorized configuration changes by NOC engineers  
+
+---
+
+### 🔔 System Behavior
+| Activity | Response |
+|--------|----------|
+| Successful login | Stored as log |
+| Failed login < threshold | Stored as log |
+| Failed login > threshold | Incident + Alert |
+| NOC config change | Audit log (no alert) |
+
+---
+
+## 🛡️ Philosophy / Filosofi
+
+> **Every log is grain.  
+> Setiap log adalah padi.**  
+>
+> **Every attack is a pest.  
+> Setiap serangan adalah hama.**  
+>
+> **Every datum is sovereignty.  
+> Setiap data adalah marwah.**
+
+---
+
+## 📌 Important Notice / Catatan Penting
+Repository ini **belum direkomendasikan untuk penggunaan produksi**.  
+This repository is **not recommended for production use** at this stage.
+
+---
+
+🌾 **LeuitLog — Secure Your Logs, Secure Your Network**
