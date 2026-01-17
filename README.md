@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/Leuitloglogonobg.png" alt="LeuitLog Logo" width="180"/>
+  <img src="./docs/logo.png" alt="LeuitLog Logo" width="180"/>
 </p>
 
 <h1 align="center">LeuitLog 🌾</h1>
