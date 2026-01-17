@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/category-SIEM-blue"/>
   <img src="https://img.shields.io/badge/syslog-UDP%20514-green"/>
   <img src="https://img.shields.io/badge/platform-Linux-lightgrey"/>
-  <img src="https://img.shields.io/badge/license-TBD-red"/>
+  <img src="https://img.shields.io/badge/license-MIT-red"/>
 </p>
 
 ---
