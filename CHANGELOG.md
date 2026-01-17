@@ -40,3 +40,23 @@ This is the **first public pre-release** of LeuitLog.
 ### 🇬🇧 English
 - Implemented syslog receiver and rule-based detection
 - Stabilized core architecture
+
+## v0.2.2 (Unreleased)
+
+### 🇮🇩 Indonesia
+- Menambahkan file dokumentasi awal untuk folder yang sebelumnya kosong
+- Menyediakan `docs/README.md` sebagai anchor dokumentasi
+- Menambahkan penjelasan branding pada `assets/README.md`
+- Menambahkan dokumentasi tujuan operasional pada `scripts/README.md`
+- Menambahkan template dashboard awal (`web/templates/dashboard.html`)
+- Menambahkan stylesheet dasar untuk web dashboard (`web/static/style.css`)
+- Fokus pada repository hygiene dan kejelasan struktur proyek
+
+### 🇬🇧 English
+- Added initial documentation files for previously empty directories
+- Introduced `docs/README.md` as documentation anchor
+- Added branding explanation in `assets/README.md`
+- Added operational documentation in `scripts/README.md`
+- Added initial dashboard template (`web/templates/dashboard.html`)
+- Added basic stylesheet for web dashboard (`web/static/style.css`)
+- Focused on repository hygiene and structural clarity

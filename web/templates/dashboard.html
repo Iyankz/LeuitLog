@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LeuitLog Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h1>LeuitLog Dashboard</h1>
+
+  <section>
+    <h2>Summary</h2>
+    <table>
+      <tr>
+        <th>Metric</th>
+        <th>Count</th>
+      </tr>
+      <tr>
+        <td>Total Logs</td>
+        <td>{{ total_logs }}</td>
+      </tr>
+      <tr>
+        <td>Devices</td>
+        <td>{{ total_devices }}</td>
+      </tr>
+      <tr>
+        <td>Alerts</td>
+        <td>{{ total_alerts }}</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p>LeuitLog v0.2.x — Lightweight SIEM</p>
+  </footer>
+</body>
+</html>
