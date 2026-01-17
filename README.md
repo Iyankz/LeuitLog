@@ -125,3 +125,19 @@ This repository is **not recommended for production use** at this stage.
 ---
 
 🌾 **LeuitLog — Secure Your Logs, Secure Your Network**
+
+
+
+---
+## 🔧 v0.2.1 Update (Preserved Evolution)
+
+This version **extends v0.1.0 without removing any content**.
+
+New in v0.2.1:
+- Working syslog receiver (UDP 514)
+- RFC3164 & RFC5424 parsing
+- Rule-based detection engine (YAML)
+- SQLite storage backend
+- CLI and lightweight web dashboard
+
+All philosophy and architecture above remain valid.
