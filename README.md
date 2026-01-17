@@ -20,7 +20,7 @@
 
 ---
 
-![LeuitLog Architecture](./docs/WorkFlow%20LeuitLog.png)
+![LeuitLog Architecture](./docs/WorkFlow.png)
 
 ---
 
