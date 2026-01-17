@@ -1,0 +1,12 @@
+rules:
+  - id: ssh_bruteforce
+    description: SSH brute force attempt
+    match: "failed password"
+    threshold: 5
+    window: 60
+    severity: CRITICAL
+
+  - id: config_change
+    description: Device configuration changed
+    match: "configuration changed"
+    severity: WARNING

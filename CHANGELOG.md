@@ -28,3 +28,15 @@ This is the **first public pre-release** of LeuitLog.
 - This version is **not production-ready**
 - APIs, architecture, and workflows may change
 - Focus is on design, documentation, and foundation setup
+
+
+
+## v0.2.1
+
+### 🇮🇩 Indonesia
+- Implementasi syslog receiver dan rule-based detection
+- Struktur core distabilkan
+
+### 🇬🇧 English
+- Implemented syslog receiver and rule-based detection
+- Stabilized core architecture

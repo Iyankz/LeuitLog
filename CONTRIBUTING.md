@@ -39,3 +39,13 @@ LeuitLog dikembangkan dengan semangat:
 > **Mandiri, sederhana, dan berdaulat**
 
 Terima kasih sudah ikut menjaga marwah proyek ini 🌾
+
+
+
+---
+## v0.2.1 Contribution Focus
+
+Contributions are especially welcome for:
+- Detection rules
+- Documentation refinement
+- Testing and validation

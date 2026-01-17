@@ -54,3 +54,10 @@ Roadmap ini bersifat **dinamis** dan dapat berubah sesuai:
 ---
 
 🌾 **LeuitLog — Secure Your Logs, Secure Your Network**
+
+
+
+---
+## v0.2.x Focus
+- Core stabilization
+- Detection rule enrichment
