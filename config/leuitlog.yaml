@@ -1,5 +1,0 @@
-syslog:
-  udp_port: 514
-
-storage:
-  db: /var/lib/leuitlog/leuitlog.db
