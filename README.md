@@ -25,7 +25,7 @@ LeuitLog is a lightweight logging daemon designed for 24/7 server operation with
 
 ```bash
 # Clone or download the repository
-git clone https://github.com/Iyankz/LeuitLog.Git
+git clone https://github.com/Iyankz/LeuitLog.git
 cd LeuitLog
 
 # Run the installer (requires root)
