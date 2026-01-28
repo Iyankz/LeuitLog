@@ -29,7 +29,7 @@ git clone https://github.com/Iyankz/LeuitLog.git
 cd LeuitLog
 
 # Run the installer (requires root)
-sudo ./install.sh
+sudo bash install.sh
 ```
 
 ### Manual Installation
